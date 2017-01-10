@@ -1,0 +1,5 @@
+#ignore package from npm
+node_modules
+
+
+
