@@ -2,9 +2,10 @@
   "name": "xz-tty",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon main.js",
+    "sass": "sass --watch ./public/sass/*.scss:./public/css/"
   },
   "author": "",
   "license": "ISC",
@@ -13,8 +14,8 @@
     "express-hbs": "^1.0.3"
   },
   "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-contrib-jshint": "^1.1.0",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.0",
     "nodemon": "^1.11.0"
   }
 }
