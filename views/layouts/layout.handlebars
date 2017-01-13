@@ -4,9 +4,15 @@
 	<title>天天易理财官网——安全、透明的投融资理财平台</title>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="/css/layout.css">
+	<link rel="stylesheet" type="text/css" href="/css/home.css">
+	<script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 </head>
 <body>
+	{{! client script}}
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+
 	<header>
 		<div class="header-top-container">
 			<p class="warning-message">欢迎来到天天易，投资有风险，选择需谨慎</p>
@@ -25,7 +31,6 @@
 				</li>
 			</ul>
 		</div>
-
 		<div class = "header-nav-container">
 			<div class="center-block">
 				<img class="logo" src="/img/header/logo.png">
@@ -61,22 +66,50 @@
 			</div> 
 		</div>
 	</header>
-	<main>
-		{{{body}}}
-	</main>
+	<main>{{{body}}}</main>
 	<footer>
 		<div class="footer-segment-bar"></div>
 		<div class="footer-intro">
-			<ul>
-				<li></li>
-				<li></li>
-				
-			</ul>
+			<div class="center-block">
+				<ul class="nav navbar-nav intro-detail">
+					<li><a href="#">关于我们</a></li>
+					<li><a href="#">帮助中心</a></li>
+					<li><a href="#">安全保障</a></li>
+					<li>
+						APP下载:
+						<span class="fa-stack fa-lg" data-toggle="popover" data-placement="top" data-html="true" data-content="<img style='height:105px;width:105px;' src='img/android.jpg'>" data-original-title="" title="">
+							  <i class="fa fa-circle fa-stack-2x"></i>
+							  <i class="fa fa-android fa-stack-1x fa-inverse"></i>
+						</span>
+						<span class="fa-stack fa-lg" data-toggle="popover" data-placement="top" data-html="true" data-content="<img style='height:105px;width:105px;' src='img/ios.png'>" data-original-title="" title="">
+							  <i class="fa fa-circle fa-stack-2x"></i>
+							  <i class="fa fa-apple fa-stack-1x fa-inverse"></i>
+						</span>
+					</li>
+					<li>
+						自媒体:
+						<a class="fa-stack fa-lg" id="weibo" href="http://weibo.com/u/5755857789" target="_blank">
+							  <i class="fa fa-circle fa-stack-2x"></i>
+							  <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+						</a>
+						<span class="fa-stack fa-lg" data-toggle="popover" data-placement="top" data-html="true" data-content="公众号:<br><img style='height:110px;width:110px;' src='img/fuwuhao.jpg'><br>订阅号:<br><img style='height:110px;width:110px;' src='img/dingyuehao.jpg'>" data-original-title="" title="">
+							  <i class="fa fa-circle fa-stack-2x"></i>
+							  <i class="fa fa-weixin fa-stack-1x fa-inverse"></i>
+						</span>
+					</li>
+				</ul>
+				<ul class="company-intro">
+					<li>Copyright © 2016, All Rights Reserved</li>
+					<li>新浙互联网金融服务（杭州）有限公司</li>
+					<li>浙ICP备15035617</li>
+				</ul>
+				<p>客服热线:13601687064 (9:00-18:00)</p>
+			</div>
 		</div>
 		<div class="footer-website-link">
-			<div class="friend-link">
-				<span style="float: left;">友情链接:</span>
-				<ul class="nav navbar-nav">
+			<div class="center-block">
+				<ul class="nav navbar-nav friend-link">
+					<li class='friend-link-title'>友情链接:</li>
 					<li><a href="http://www.htbill.com/" target="_blank">票据咨询</a></li>
 					<li><a href="https://www.duozhuan.cn/" target="_blank">多赚</a></li>
 					<li><a href="http://www.p2peye.com/" target="_blank">网贷天眼</a></li>
@@ -88,9 +121,9 @@
 					<li><a href="http://www.zt5.com/lc/" target="_blank">理财小知识</a></li>
 					<li><a href="http://www.asiafinance.cn/" target="_blank">亚洲财经</a></li>
 				</ul>
-			</div>
-			<div class="award-show">
-				
+				<div class="award-show">
+					
+				</div>
 			</div>
 		</div>
 		<div class="footer-police-recoder-container">
@@ -98,7 +131,5 @@
 				<span>浙公网安备 33010502001509号</span>
 		</div>
 	</footer>
-	{{! 引入客户端脚本 }}
-	<script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 </body>
 </html>

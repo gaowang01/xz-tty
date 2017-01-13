@@ -5,13 +5,15 @@
   "main": "main.js",
   "scripts": {
     "dev": "nodemon main.js",
-    "sass": "sass --watch ./public/sass/*.scss:./public/css/"
+    "less": "gulp less"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.14.0",
-    "express-hbs": "^1.0.3"
+    "express-handlebars": "^3.0.0",
+    "xtemplate": "^4.6.0",
+    "xtpl": "^3.3.0"
   },
   "devDependencies": {
     "gulp": "^3.9.1",

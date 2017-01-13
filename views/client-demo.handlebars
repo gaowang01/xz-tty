@@ -1,0 +1,21 @@
+<script id="x-template" type="text/x-template">
+	\{{#each comments}}
+		<li>\{{name}}-\{{say}}</li>
+	\{{/each}}
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('button').click(function(){
+			$.get('/test',function(data,status){
+				var source = $('#x-template').html();
+				var template = Handlebars.compile(source);
+				var html = template({comments:data});
+				$('#dynamic-list').html(html);
+			})
+		});
+	});
+</script>
+
+<ul id='dynamic-list'></ul>
+<button>生成列表</button>
