@@ -1,3 +1,4 @@
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script id="x-template" type="text/x-template">
 	\{{#each comments}}
 		<li>\{{name}}-\{{say}}</li>
@@ -6,16 +7,22 @@
 
 <script type="text/javascript">
 	$(document).ready(function(){
-		$('button').click(function(){
-			$.get('/test',function(data,status){
-				var source = $('#x-template').html();
-				var template = Handlebars.compile(source);
-				var html = template({comments:data});
-				$('#dynamic-list').html(html);
-			})
-		});
+		// $('button').click(function(){
+		// 	$.get('/test',function(data,status){
+		// 		var source = $('#x-template').html();
+		// 		var template = Handlebars.compile(source);
+		// 		var html = template({comments:data});
+		// 		$('#dynamic-list').html(html);
+		// 	})
+		// });
 	});
 </script>
 
 <ul id='dynamic-list'></ul>
-<button>生成列表</button>
+<button data-toggle='LUV'>生成列表</button>
+
+<script type="x-template">
+	var event = new Event('build');
+	elem.addEventListener('build',function(){},false);
+	elem.dispatchEvent(event);
+</script>

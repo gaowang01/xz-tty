@@ -2,134 +2,113 @@
 <html>
 <head>
 	<title>天天易理财官网——安全、透明的投融资理财平台</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	{{!三方库样式}}
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="/css/home.css">
-	<script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+	{{!自定义样式}}
+	<link rel="stylesheet" type="text/css" href="/css/layout.css">
 </head>
 <body>
-	{{! client script}}
+	{{!三方lib}}
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
-
-	<header>
-		<div class="header-top-container">
-			<p class="warning-message">欢迎来到天天易，投资有风险，选择需谨慎</p>
-			<ul class="nav navbar-nav">
-				<li>
-					<i class="fa fa-user"></i><a href="#" style="display: inline;">登录</a>
-					/<a href="#" style="display: inline;">注册</a>
-				</li>
-				<li>
-					<i class="fa fa-mobile">APP下载</i>
-					<i class="fa fa-android"></i>
-					<i class="fa fa-apple"></i>
-				</li>
-				<li>
-					<i class="fa fa-phone">13601687064</i>
-				</li>
-			</ul>
-		</div>
-		<div class = "header-nav-container">
-			<div class="center-block">
-				<img class="logo" src="/img/header/logo.png">
-				{{! 导航栏 }}
-				<ul class="nav navbar-nav pull-right">
-					<li>
-						<a>首页<p>HOME</p></a>
-						<img alt='导航悬浮图片' src="/img/header/header-nav-active.jpg">
-					</li>
-					<li class ="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" >我要理财<p>FINANCIAL</p></a>
-						<img alt='导航悬浮图片' src="/img/header/header-nav-active.jpg">
-						<ul class="dropdown-content">
-							<li><a href="#">票货融通</a></li>
-							<li><a href="#">股权融通</a></li>
-							<li><a href="#">私募基金</a></li>
-							<li><a href="#">普惠金融</a></li>
-						</ul>
-					</li>
-					<li>
-						<a>新手引导<p>GUIDELINES</p></a>
-						<img alt='导航悬浮图片' src="/img/header/header-nav-active.jpg">
-					</li>
-					<li>
-						<a>安全保障<p>SECURITY</p></a>
-						<img alt='导航悬浮图片' src="/img/header/header-nav-active.jpg">
-					</li>
-					<li>
-						<a>新手引导<p>ACCOUNT</p></a>
-						<img alt='导航悬浮图片' src="/img/header/header-nav-active.jpg">
-					</li>
-				</ul>
-			</div> 
-		</div>
-	</header>
-	<main>{{{body}}}</main>
-	<footer>
-		<div class="footer-segment-bar"></div>
-		<div class="footer-intro">
-			<div class="center-block">
-				<ul class="nav navbar-nav intro-detail">
-					<li><a href="#">关于我们</a></li>
-					<li><a href="#">帮助中心</a></li>
-					<li><a href="#">安全保障</a></li>
-					<li>
-						APP下载:
-						<span class="fa-stack fa-lg" data-toggle="popover" data-placement="top" data-html="true" data-content="<img style='height:105px;width:105px;' src='img/android.jpg'>" data-original-title="" title="">
-							  <i class="fa fa-circle fa-stack-2x"></i>
-							  <i class="fa fa-android fa-stack-1x fa-inverse"></i>
-						</span>
-						<span class="fa-stack fa-lg" data-toggle="popover" data-placement="top" data-html="true" data-content="<img style='height:105px;width:105px;' src='img/ios.png'>" data-original-title="" title="">
-							  <i class="fa fa-circle fa-stack-2x"></i>
-							  <i class="fa fa-apple fa-stack-1x fa-inverse"></i>
-						</span>
-					</li>
-					<li>
-						自媒体:
-						<a class="fa-stack fa-lg" id="weibo" href="http://weibo.com/u/5755857789" target="_blank">
-							  <i class="fa fa-circle fa-stack-2x"></i>
-							  <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
-						</a>
-						<span class="fa-stack fa-lg" data-toggle="popover" data-placement="top" data-html="true" data-content="公众号:<br><img style='height:110px;width:110px;' src='img/fuwuhao.jpg'><br>订阅号:<br><img style='height:110px;width:110px;' src='img/dingyuehao.jpg'>" data-original-title="" title="">
-							  <i class="fa fa-circle fa-stack-2x"></i>
-							  <i class="fa fa-weixin fa-stack-1x fa-inverse"></i>
-						</span>
-					</li>
-				</ul>
-				<ul class="company-intro">
-					<li>Copyright © 2016, All Rights Reserved</li>
-					<li>新浙互联网金融服务（杭州）有限公司</li>
-					<li>浙ICP备15035617</li>
-				</ul>
-				<p>客服热线:13601687064 (9:00-18:00)</p>
-			</div>
-		</div>
-		<div class="footer-website-link">
-			<div class="center-block">
-				<ul class="nav navbar-nav friend-link">
-					<li class='friend-link-title'>友情链接:</li>
-					<li><a href="http://www.htbill.com/" target="_blank">票据咨询</a></li>
-					<li><a href="https://www.duozhuan.cn/" target="_blank">多赚</a></li>
-					<li><a href="http://www.p2peye.com/" target="_blank">网贷天眼</a></li>
-					<li><a href="http://www.wdzj.com/" target="_blank">网贷之家</a></li>
-					<li><a href="http://www.yuncaijing.com/" target="_blank">云财经</a></li>
-					<li><a href="http://www.wukongshuo.com/" target="_blank">悟空说财经</a></li>
-					<li><a href="http://www.zgpj.net/" target="_blank">中国票据网</a></li>
-					<li><a href="http://www.rong360.com/" target="_blank">融360</a></li>
-					<li><a href="http://www.zt5.com/lc/" target="_blank">理财小知识</a></li>
-					<li><a href="http://www.asiafinance.cn/" target="_blank">亚洲财经</a></li>
-				</ul>
-				<div class="award-show">
-					
+	<div class="wrapper">
+		<header>
+			<div class='header-top'>
+				<div class='container'>
+					<div class='navbar-header'>
+						欢迎来到天天易，投资有风险，选择需谨慎
+					</div>
+					<ul class="nav navbar-right navbar-nav">
+						<li><a href="#">会员登陆</a><i class="nav-segment-line">|</i></li>
+						<li><a href="#">免费注册</a><i class="nav-segment-line">|</i></li>
+						<li>
+							<a class="dropdown nav-mobile">
+								<i class='fa fa-mobile mobile-icon'></i>
+								<label>手机天天易</label>
+								<div class="dropdown-menu">
+									<div style="float:left;text-align:center;">
+										<img src="img/android-154.jpg" alt="天天易android二维码">
+										<p>Android App</p>
+									</div>
+									<div style="float:right;text-align:center;">
+										<img src="img/ios-154.jpg" alt="天天易ios二维码">
+										<p>ios App</p>
+									</div>
+								</div>
+							</a>
+							<a href="http://weibo.com/u/5755857789" target="_blank"><i class='fa fa-weibo nav-weibo'></i></a>
+							<a class="dropdown">
+								<i class='fa fa-weixin nav-weixin'></i>
+								<div class="dropdown-menu">
+										<div style="float:left;text-align:center;">
+											<img src="img/fuwuhao.jpg" alt="天天易微信服务号二维码" style="width:154px;" />
+											<p>服务号</p>
+										</div>
+										<div style="float:right;text-align:center;">
+											<img src="img/dingyuehao.jpg" alt="天天易微信订阅号二维码" style="width:154px;" />
+											<p>订阅号</p>
+										</div>
+								</div>
+							</a>
+							<i class="nav-segment-line">|</i>
+						</li>
+						<li>资讯热线:13601687064</li>
+					</ul>
 				</div>
 			</div>
-		</div>
-		<div class="footer-police-recoder-container">
-				<img src="/img/footer/police.png">
-				<span>浙公网安备 33010502001509号</span>
-		</div>
-	</footer>
+			{{!导航栏}}
+			<nav class="navbar navbar-default">
+			  <div class="container">
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>                        
+			      </button>
+			      <a class="navbar-brand" href="#">
+			      </a>
+			    </div>
+			    <div class="collapse navbar-collapse" id="myNavbar">
+			      <ul class="nav navbar-nav navbar-right">
+			        <li><a href="#">首页</a></li>
+			        <li class ="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">我要理财<span class="caret"></span></a>
+                       	<ul class="dropdown-menu">
+                            <li><a href="#">票货融通</a></li>
+                            <li><a href="#">股权融通</a></li>
+                            <li><a href="#">私募基金</a></li>
+                            <li><a href="#">普惠金融</a></li>
+	                    </ul>
+			        </li>
+			        <li><a href="#">新手指引</a></li>
+			        <li><a href="#">安全保障</a></li>
+			        <li><a href="#">我的账户</a></li>
+			      </ul>
+			    </div>
+			  </div>
+			</nav>
+		</header>
+		<main></main>
+		<footer class="row">
+			<div class="col-md-6 footer-left-container">大型设备左边</div>
+			<div class="col-md-6 col-sm-12 col-xs-12">
+				<div>
+					<a href="#">关于我们</a>
+					<span>|</span>
+					<a href="#">帮助中心</a>
+					<span>|</span>
+					<a href="#">安全保障</a>
+				</div>
+				<div>浙公网安备 33010502001509号</div>
+				<div>Copyright © 2016, All Rights Reserved 浙ICP备15035617</div>
+				<div>新浙互联网金融服务（杭州）有限公司 客服热线：13601687064 (9:00-18:00)</div>
+			</div>
+		</footer>
+	</div>
 </body>
 </html>

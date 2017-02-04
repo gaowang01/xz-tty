@@ -1,0 +1,91 @@
+.header-top {
+	height: 40px;
+	line-height: 40px;
+	background-color: @bg-gray;
+	.navbar-header {
+		height: 40px;
+		line-height: 40px;
+	}
+}
+
+.navbar-nav > li {
+	height: 40px;
+	line-height: 40px;
+	a {
+		padding: 0;
+		display: inline-block;
+	}
+}
+
+.nav-mobile:hover > .dropdown-menu {
+	display: block;
+	transform: translate(50%,0);
+	width: 340px;
+	padding: 5px 3px;
+}
+
+.mobile-icon {
+	vertical-align: middle;
+	font-size: 26px;
+}
+
+.nav-weibo {
+	background-color: @dark-red;
+	color: white;
+	padding: 5px;
+	border-radius: 50%;
+}
+
+.nav-weixin {
+	background-color: green;
+	color: white;
+	padding: 5px;
+	border-radius: 50%;
+}
+
+.nav-weixin:hover + .dropdown-menu {
+	display:block;
+	transform: translate(50%,0);
+	width: 340px;
+	padding: 5px 3px;
+}
+
+.nav-segment-line {
+	padding-right: 7px;
+	padding-left: 7px;
+}
+
+////////////////////////////////////////////
+//nav
+////////////////////////////////////////////
+header > .navbar-default{
+	background-color: white;
+	margin-bottom: 0;
+	border:none;
+	.navbar-brand {
+		width: 148px;
+		height: 80px;
+		line-height: 80px;
+		background-image: url('/img/header/logo.png');
+		background-repeat: no-repeat;
+		background-position:center;
+	}
+
+	.navbar-nav > li > a {
+		height: 80px;
+		line-height: 80px;
+		margin-left: 60px;
+	}
+}
+
+#myNavbar {
+	ul > li.dropdown > a:hover + .dropdown-menu {
+		display: block;
+		transform:translate(55%,10%);
+	}
+
+	ul > li.dropdown > a + .dropdown-menu:hover {
+		display: block;
+		transform:translate(55%,10%);
+	}
+}

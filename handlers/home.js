@@ -13,9 +13,3 @@ var mock_project = [{
 exports.render = function(req,res){
 	res.render('./home');
 }
-
-exports.generateList = function(req,res){
-	var list = [{name:'james',say:'yes'},{name:'sam',say:'no'}];
-	console.log('server-list=',list);
-	res.send(list);
-}

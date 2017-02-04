@@ -1,0 +1,26 @@
+@import './common.less';
+body {
+	width:100%;
+	line-height: 20px;
+	font-size: 14px;
+}
+
+//1024px~max
+@media only screen and (min-width:1024px) {
+	.wrapper {
+		width: 100%;
+		min-width: 1200px;
+		max-width: 1366px;
+		margin: auto;
+	}
+
+	@import './layout/layout.head.less';
+	@import './layout/layout.footer.less';
+}
+
+//0~1024px
+@media only screen and (max-width:1024px) {
+	@import './layout/layout.head.mobile.less';
+	@import './layout/layout.footer.mobile.less';
+}
+
