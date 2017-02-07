@@ -5,19 +5,16 @@
   "main": "main.js",
   "scripts": {
     "dev": "nodemon main.js",
-    "less": "gulp less"
+    "less": "gulp less",
+    "sass":"sass --watch ./public/sass:./public/css --sourcemap=none"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.14.0",
     "express-handlebars": "^3.0.0",
-    "xtemplate": "^4.6.0",
-    "xtpl": "^3.3.0"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-less": "^3.3.0",
     "nodemon": "^1.11.0"
   }
 }

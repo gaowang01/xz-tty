@@ -7,7 +7,7 @@
 .header-top {
 	height: 40px;
 	line-height: 40px;
-	background-color: @bg-gray;
+	background-color: $bg-gray;
 	.navbar-header {
 		height: 40px;
 		line-height: 40px;
@@ -32,7 +32,7 @@
 }
 
 .nav-weibo {
-	background-color: @dark-red;
+	background-color: $dark-red;
 	color: white;
 	padding: 5px;
 	border-radius: 50%;

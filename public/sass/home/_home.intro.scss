@@ -1,4 +1,4 @@
-@darkgold:rgba(196, 173, 133, 1.0);
+
 .home-intro{
 	width: 100%;
 	height: 469px;
@@ -15,7 +15,7 @@
 	}
 
 	.detail {
-		color: @darkgold;
+		color:$darkgold;
 		font-size: 0.8em;
 	}
 }

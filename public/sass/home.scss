@@ -1,0 +1,8 @@
+$gold:rgba(165, 117, 50, 1.0);
+$darkgold:rgba(196, 173, 133, 1.0);
+$tabs-bg:rgba(253,242,220,1.0);
+
+@import './home/_home.tabs.scss';
+@import './home/_home.intro.scss';
+@import './home/_home.coop.scss';
+@import './home/_home.news.scss';

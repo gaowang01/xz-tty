@@ -1,0 +1,17 @@
+@import './_common.scss';
+
+body {
+	width:100%;
+	font-size: 14px;
+}
+
+.wrapper {
+	width: 100%;
+	min-width: 1200px;
+	max-width: 1366px;
+	margin: auto;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.25)
+}
+
+@import './layout/_layout.header.scss';
+@import './layout/_layout.footer.scss';
