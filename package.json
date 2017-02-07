@@ -4,15 +4,13 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "dev": "nodemon main.js",
-    "less": "gulp less",
-    "sass":"sass --watch ./public/sass:./public/css --sourcemap=none"
+    "test":"nodemon main.js & sass --watch ./public/sass:./public/css --sourcemap=none"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.14.0",
-    "express-handlebars": "^3.0.0",
+    "express-handlebars": "^3.0.0"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"
