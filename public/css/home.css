@@ -1,0 +1,243 @@
+@media (max-width: 1025px) {
+  .navbar-header {
+    float: none;
+  }
+  .navbar-left,
+  .navbar-right {
+    float: none !important;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
+  .navbar-nav {
+    float: none!important;
+    margin-top: 7.5px;
+  }
+  .navbar-nav > li {
+    float: none;
+  }
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .collapse.in {
+    display: block !important;
+  }
+}
+@media (max-width: 1025px) {
+  .container {
+    width: 100%;
+  }
+  .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: :0;
+    background-color: transparent;
+    border: 0;
+    webkit-box-shadow: none;
+    box-shadow: none;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .blank-tag {
+    width: 100%;
+    height: 100%;
+    background-image: url('/img/home/waitandsee3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .home-tabs {
+    background-color: #fdf2dc;
+    height: 469px;
+  }
+  .home-intro {
+    width: 100%;
+    height: 469px;
+    background-image: url('/img/company/companyInfoBg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 15px;
+    text-align: center;
+  }
+  .home-intro .title {
+    color: white;
+  }
+  .home-intro .detail {
+    color: #c4ad85;
+    font-size: 0.8em;
+  }
+  .home-coop {
+    text-align: center;
+    padding-top: 20px;
+  }
+  .home-coop .title {
+    color: #a57532;
+    font-size: 1.6em;
+  }
+  .home-coop .detail {
+    color: #a57532;
+  }
+  .coop-list {
+    padding: 10px 30px;
+  }
+  .news {
+    height: 350px;
+    text-align: center;
+  }
+  .news .title {
+    font-size: 1.6em;
+    color: #a57532;
+  }
+  .news .detail {
+    color: #a57532;
+  }
+  .news .news-c {
+    min-width: 65%;
+    max-width: 85%;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  .news .news-d {
+    height: 230px;
+  }
+  .news .news-image {
+    height: 100%;
+    background-image: url('/img/home/newsHome.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .news .news-detail {
+    height: 100%;
+  }
+  .news .news-detail ul {
+    list-style-type: none;
+  }
+  .news .news-detail ul li {
+    height: 57.5px;
+    color: black;
+  }
+  .news .news-detail .date {
+    float: left;
+    height: 57.5px;
+    width: 15%;
+    border-right: solid 1px grey;
+  }
+  .news .news-detail .date .title {
+    font-size: 3.5em;
+    line-height: 40.25px;
+  }
+  .news .news-detail .date .sub-title {
+    font-size: 0.5em;
+    line-height: 17.25px;
+  }
+  .news .news-detail .content {
+    float: right;
+    height: 57.5px;
+    width: 85%;
+    text-align: left;
+    padding-left: 5px;
+  }
+  .news .news-detail .content .title {
+    font-size: 1.2em;
+    color: black;
+    line-height: 23px;
+  }
+  .news .news-detail .content .sub-content {
+    font-size: 0.7em;
+    height: 34.5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .news .panel-group .panel-body {
+    font-size: 10px;
+    text-align: left;
+  }
+  .time li.line {
+    line-height: 12px;
+  }
+  .time li a:hover {
+    background-color: transparent;
+    text-decoration: none;
+  }
+  .time li a:active {
+    background-color: transparent;
+    text-decoration: none;
+  }
+  .time li a:link {
+    background-color: transparent;
+    text-decoration: none;
+  }
+  .time li.dot {
+    background-image: url('/img/home/tld.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 12px;
+    height: 12px;
+  }
+  .time li.dot a {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  .time li.dot a span {
+    position: absolute;
+    transform: translate(-50%, 50%);
+    width: 80px;
+    display: none;
+  }
+  .time li.active {
+    background-image: url('/img/home/tlda.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 12px;
+    height: 12px;
+  }
+  .time li.active a > span {
+    display: block;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .nav-tabs.nav-justified {
+    width: 100%;
+    border-bottom: 0;
+  }
+  .nav-tabs.nav-justified li {
+    float: left;
+    width: 33.33%;
+  }
+  .home-tabs {
+    background-color: #fdf2dc;
+    height: 469px;
+  }
+  .blank-tag {
+    width: 100%;
+    height: 100%;
+    background-image: url('/img/home/waitandsee3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .home-intro {
+    width: 100%;
+    height: 469px;
+    background-image: url('/img/company/companyInfoBg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
